@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2425F81C-0758-4A6E-B038-E8DDB10C15BF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Euler</RootNamespace>
+    <AssemblyName>Euler</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\DigitsHelpers.cs" />
+    <Compile Include="Helpers\RomanExtensions.cs" />
+    <Compile Include="Helpers\TreeHelpers.cs" />
+    <Compile Include="Problems\AbstractProblem.cs" />
+    <Compile Include="Problems\P043.cs" />
+    <Compile Include="Problems\P052.cs" />
+    <Compile Include="Problems\P026.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Utils\Functions.cs" />
+    <Compile Include="Utils\Tree.cs" />
+    <Compile Include="Utils\BigIntegerMap.cs" />
+    <Compile Include="Utils\Coord.cs" />
+    <Compile Include="Utils\Edge.cs" />
+    <Compile Include="Utils\EulerSum.cs" />
+    <Compile Include="Utils\IntegerMap.cs" />
+    <Compile Include="Utils\Kruskal.cs" />
+    <Compile Include="Utils\Roman.cs" />
+    <Compile Include="Numbers\Complex.cs" />
+    <Compile Include="Numbers\Fraction.cs" />
+    <Compile Include="Numbers\Polynom.cs" />
+    <Compile Include="Problems\P001.cs" />
+    <Compile Include="Problems\P002.cs" />
+    <Compile Include="Problems\P003.cs" />
+    <Compile Include="Problems\P004.cs" />
+    <Compile Include="Problems\P005.cs" />
+    <Compile Include="Problems\P006.cs" />
+    <Compile Include="Problems\P007.cs" />
+    <Compile Include="Problems\P008.cs" />
+    <Compile Include="Problems\P009.cs" />
+    <Compile Include="Problems\P010.cs" />
+    <Compile Include="Problems\P011.cs" />
+    <Compile Include="Problems\P012.cs" />
+    <Compile Include="Problems\P013.cs" />
+    <Compile Include="Problems\P014.cs" />
+    <Compile Include="Problems\P015.cs" />
+    <Compile Include="Problems\P016.cs" />
+    <Compile Include="Problems\P017.cs" />
+    <Compile Include="Problems\P018.cs" />
+    <Compile Include="Problems\P019.cs" />
+    <Compile Include="Problems\P020.cs" />
+    <Compile Include="Problems\P021.cs" />
+    <Compile Include="Problems\P022.cs" />
+    <Compile Include="Problems\P023.cs" />
+    <Compile Include="Problems\P024.cs" />
+    <Content Include="Problems\P025.java" />
+    <Content Include="Problems\P026.java" />
+    <Content Include="Problems\P027.java" />
+    <Content Include="Problems\P028.java" />
+    <Content Include="Problems\P029.java" />
+    <Content Include="Problems\P030.java" />
+    <Content Include="Problems\P031.java" />
+    <Content Include="Problems\P032.java" />
+    <Content Include="Problems\P033.java" />
+    <Content Include="Problems\P034.java" />
+    <Content Include="Problems\P035.java" />
+    <Content Include="Problems\P036.java" />
+    <Content Include="Problems\P037.java" />
+    <Content Include="Problems\P038.java" />
+    <Content Include="Problems\P039.java" />
+    <Content Include="Problems\P040.java" />
+    <Content Include="Problems\P041.java" />
+    <Content Include="Problems\P042.java" />
+    <Content Include="Problems\P044.java" />
+    <Content Include="Problems\P045.java" />
+    <Content Include="Problems\P046.java" />
+    <Content Include="Problems\P047.java" />
+    <Content Include="Problems\P048.java" />
+    <Content Include="Problems\P049.java" />
+    <Content Include="Problems\P050.java" />
+    <Content Include="Problems\P051.java" />
+    <Content Include="Problems\P055.java" />
+    <Content Include="Problems\P065.java" />
+    <Content Include="Problems\P067.java" />
+    <Content Include="Problems\P081.java" />
+    <Content Include="Problems\P089.java" />
+    <Content Include="Problems\P092.java" />
+    <Content Include="Problems\P107.java" />
+    <Content Include="Problems\P109.java" />
+    <Content Include="Problems\P121.java" />
+    <Content Include="Problems\P144.java" />
+    <Content Include="Problems\P222.java" />
+    <Content Include="Problems\P233.java" />
+    <Content Include="Problems\P243.java" />
+    <Content Include="Problems\P317.java" />
+    <Content Include="Problems\P432.java" />
+    <Content Include="Problems\P433.java" />
+    <Content Include="Problems\P434.java" />
+    <Content Include="Utils\Traits.java" />
+    <Compile Include="Utils\VeryLong.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

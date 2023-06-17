@@ -1,0 +1,6 @@
+.vs/
+Euler/bin/
+Euler/obj/
+Euler.Tests/bin/
+Euler.Tests/obj/
+packages/
